@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Basic Calculator</h1>
+        <form action="/" method="post">
+            <div class="input-section">
+                <input name="number1" type="number" id="number1" placeholder="Enter first number">
+                <input name="number2" type="number" id="number2" placeholder="Enter second number">
+            </div>
+            <div class="select-section">
+                <select id="operation">
+                    <option value="add">Addition (+)</option>
+                    <option value="subtract">Subtraction (-)</option>
+                    <option value="multiply">Multiplication (*)</option>
+                    <option value="divide">Division (/)</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+            <h1 id="result">Result: </h1>
+
+
+        </form>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
